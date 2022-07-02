@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* BANNER */
+
+#banner {
+  background-image: url(images/banner.webp);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* OVERLAY */
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+nav{
+    justify-content: center;
+    padding: 2vh;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    left: 100px;
+    position: absolute;
+    color: #000;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+ul {
+    gap: 30px;
+    margin-right: 10vh;
+    justify-content: right;
+    display: flex;
+    color: white;
+}
+
+li {
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    background-image: linear-gradient(to right,red,
+  red 50%,#000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-links:before {
+    content: '';
+    background: red;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+}
+
+.nav-links:hover {
+    background-position: 0;
+}
+
+.nav-links:hover::before {
+    width: 100%;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	letter-spacing: 2px;
+	margin: 1.1vh;
+}
+
+.nav-links:after {
+		content: "";
+		position: absolute;
+		background-color: #ff0000;
+		height: 3px;
+		width: 0;
+		left: 0;
+		bottom: -10px;
+		transition: 0.3s;
+}
+
+.nav-links:hover:after{
+	width: 100%;
+}
+
+.nome {
+    color: #000;
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%) translateY(-85%);
+    position: absolute;
+    letter-spacing: 10px;
+}
+  
+  .container {
+    background-color: whitesmoke;
+    padding: 6px;
+    margin-top: 16vh;
+    margin-left: 20vh;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgrey;
+  }
+
+  .entre-contato {
+    margin-top: 17%;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  form {
+    position: absolute;
+    margin-top: 180px;
+    transition: 0.5s;
+    width: 500px;
+    height: 600px;
+  }
+
+  input[type="email"], input[type="text"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline-color: #8a0505;
+    width: 100%;
+  }
+
+  input[type="radio"] {
+    cursor: pointer;
+    margin-left: 25px;
+  }
+
+  button[type="submit"] {
+    background: #8a0505;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px 0 20px 15px;
+    font-size: 16px;
+    margin-top: 200px;
+    cursor: pointer;
+  }
+
+  .divCheck {
+    margin: 10px 0 0 110px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+  }
+  
+  .iEmail {
+    top: 40px;
+  }
+  
+  .iBook {
+    top: 114px;
+  }
+
+  .sublinhado {
+      position: absolute;
+      border: 2px solid #282828;
+      width: 20%;
+      height: 0%;
+      margin-left: 59.5vw;
+      margin-top: 26.1vw;
+  }
+
+  .social-midia {
+    width: 100%;
+    height: 100%;
+    top: 90%;
+    left: 85%;
+    display: flex;
+    align-content: space-between;
+    position: relative;
+  }
+
+  .fa-github{
+    font-size: 35px;
+    margin-left: 90px;
+    position: absolute;
+  }
+
+  .fa-instagram{
+    font-size: 35px;
+    margin-left: 45px;
+    position: absolute;
+  }
+
+  .fa-twitter{
+    font-size: 35px;
+    margin-left: 135px;
+    position: absolute;
+  }
+  .fa-facebook{
+    font-size: 35px;
+    position: absolute;
+  }
+
+  .social-links {
+    color: #282828;
+  }
+
+  .social-links:hover {
+    color: #ff0000;
+  }
+
+  @media screen and (max-width: 600px){
+    body {
+      width: 50%;
+      height: 50%;
+    }
+    .entre-contato {
+        position: absolute;
+        margin-top: 5%;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+    }
+    .logo {
+        margin-top: -10px;
+        margin-left: -15%;
+    }
+    nav {
+        margin-top: 1vh;
+        margin-left: 20%;
+    } 
+
+    .nome {
+      color: #000;
+      font-size: 3.5rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-415%);
+      position: absolute;
+      letter-spacing: 7px;
+  }
+    .container {
+      background-color: #F5F5F5;
+      padding: 6%;
+      top: 18%;
+      left: -32%;
+      width: 85%;
+      height: 36%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 10%;
+      box-shadow: 0 0 20px 0 #a9a9a9;
+    }
+
+    form {
+      position: relative;
+      margin-top: 10%;
+      transition: 0.5s;
+      width: 80%;
+      height: 30%;
+    }
+  
+    input[type="email"], input[type="text"] {
+      border: none;
+      margin-top: 40px;
+      border-radius: 60px;
+      padding: 8px 0 8px 35px;
+      outline-color: #8a0505;
+      width: 100%;
+    }
+  
+    input[type="radio"] {
+      cursor: pointer;
+      margin-bottom: 5%;
+      margin-left: 30px;
+    }
+  
+    button[type="submit"] {
+      background: #8a0505;
+      color: #ffffff;
+      border-radius: 30px;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 20px 0 20px 15px;
+      font-size: 16px;
+      margin-top: 1px;
+      cursor: pointer;
+    }
+  
+    .divCheck {
+      margin: 30px 0 0 5.5%;
+      font-size: 1rem;
+    }
+  
+    i {
+      position: absolute;
+      left: 0;
+      padding: 10px 10px;
+    }
+    
+    .iEmail {
+      top: 40px;
+    }
+    
+    .iBook {
+      top: 114px;
+    }
+  
+    .sublinhado {
+      position: absolute;
+      border: 2px solid black;
+      width: 57%;
+      height: 0%;
+      top: 15%;
+      left: -39%;
+    }
+    label {
+      cursor: pointer;
+    }
+    .social-midia {
+      width: 50%;
+      height: 50%;
+      margin-left: -52%;
+      position: absolute;
+    }
+  
+    .fa-github{
+      font-size: 35px;
+      margin-left: 90px;
+      position: absolute;
+    }
+  
+    .fa-instagram{
+      font-size: 35px;
+      margin-left: 48px;
+      position: absolute;
+    }
+  
+    .fa-twitter{
+      font-size: 35px;
+      margin-left: 135px;
+      position: absolute;
+    }
+    .fa-facebook{
+      font-size: 35px;
+      position: absolute;
+    }
+  
+    .instagram {
+      display: block;
+      background-color: black;
+    }
+  
+    .social-links {
+      color: #282828;
+    }
+  
+    .social-links:hover {
+      color: #ff0000;
+    }
+}

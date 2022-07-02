@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab';
+}
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CORPO DA PAGINA */
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* BARRA DE NAVEGAÇÂO */
+
+nav{
+    justify-content: center;
+    padding: 2vh;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    left: 100px;
+    position: absolute;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+ul {
+    gap: 30px;
+    margin-right: 10vh;
+    justify-content: right;
+    display: flex;
+    color: white;
+}
+
+li {
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+/* LINKS */
+
+a {
+    background-image: linear-gradient(to right,red,
+  red 50%,white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
+
+a:before {
+    content: '';
+    background: red;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	position: relative;
+	letter-spacing: 2px;
+	margin: 1.1vh;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff0000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+	width: 100%;
+}
+
+/* BANNER */
+
+#banner {
+    background-image: url(images/banner.webp);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* OVERLAY */
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nome {
+    color: white;
+    font-size: 70px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150%) translateY(-50%);
+    position: absolute;
+    letter-spacing: 10px;
+}
+
+.receita {
+    position: absolute;
+    color: white;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    width: 30%;
+    left: 50%;
+    transform: translateX(20%) translateY(-23%);
+    margin-top: -19vh;
+    z-index: 5;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 35px;
+}
+
+ol {
+    margin-left: 2.5vh;
+}
+
+audio{
+    margin-top: 8%;
+    margin-left: 0.5%;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .logo {
+        margin-top: -10px;
+    }
+    nav {
+        margin-top: 1vh;
+        margin-left: 10vw;
+    }
+    .nome{
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .receita{
+        color: black;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+    }
+}

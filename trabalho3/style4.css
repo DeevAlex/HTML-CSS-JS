@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+nav{
+    justify-content: center;
+    padding: 2vh;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    left: 100px;
+    position: absolute;
+    color: #000;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+ul {
+    gap: 30px;
+    margin-right: 10vh;
+    justify-content: right;
+    display: flex;
+    color: white;
+}
+
+li {
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+a {
+    background-image: linear-gradient(to right,red,
+  red 50%,#000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
+
+a:before {
+    content: '';
+    background: red;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	letter-spacing: 2px;
+	margin: 1.1vh;
+}
+
+a:after {
+		content: "";
+		position: absolute;
+		background-color: #ff0000;
+		height: 3px;
+		width: 0;
+		left: 0;
+		bottom: -10px;
+		transition: 0.3s;
+}
+
+a:hover:after{
+	width: 100%;
+}
+
+.nome {
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(10%) translateY(-85%);
+    position: absolute;
+    letter-spacing: 10px;
+}
+  
+  .container {
+    background-color: whitesmoke;
+    padding: 6px;
+    margin-top: 16vh;
+    margin-left: 20vh;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgrey;
+  }
+
+  form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 500px;
+    height: 600px;
+  }
+
+  input[type="email"], input[type="text"] {
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline-color: #8a0505;
+    width: 100%;
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+    margin-left: 25px;
+  }
+
+  button[type="submit"] {
+    background: #8a0505;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px 0 20px 15px;
+    font-size: 16px;
+    margin-top: 300px;
+    cursor: pointer;
+  }
+
+  .divCheck {
+    margin: 10px 0 0 110px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+  }
+  
+  .iEmail {
+    top: 40px;
+  }
+  
+  .iBook {
+    top: 114px;
+  }
+
+  .sublinhado {
+      position: absolute;
+      border: 2px solid black;
+      width: 25%;
+      height: 0%;
+      margin-left: 54.35vw;
+      margin-top: 26.1vw;
+  }

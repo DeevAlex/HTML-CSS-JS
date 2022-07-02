@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    place-content: center;
+    user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+nav{
+    justify-content: center;
+    padding: 2vh;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo {
+    left: 100px;
+    position: absolute;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+ul {
+    gap: 30px;
+    margin-right: 10vh;
+    justify-content: right;
+    display: flex;
+    color: white;
+}
+
+li {
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+a {
+    background-image: linear-gradient(to right,red,
+  red 50%,white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
+
+a:before {
+    content: '';
+    background: red;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	position: relative;
+	letter-spacing: 2px;
+	margin: 1.1vh;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff0000;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+	width: 100%;
+}
+
+
+#banner {
+    background-image: url(images/Banner2.webp);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nome {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-85%);
+    position: absolute;
+    letter-spacing: 10px;
+}
+
+.topo{
+    margin-top: 20vh;
+    text-align: center;
+    user-select: none;
+}
+
+#titulotopo {
+    font-size: 55px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 5vh;
+}
+
+#paragrafotopo {
+    margin-top: 1vh;
+    width: 760px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    margin-left: 57vh;
+    margin-bottom: 5vh;
+}
+
+.imagem1{
+    margin-top: 90px;
+    margin-left: 60px;
+    display: flex;
+    text-justify: distribute;
+    text-align: justify;
+    float: left;
+}
+
+.legenda {
+    height: 20px;
+    width: 120px;
+    float: left;
+    text-align: justify;
+}
+
+.atividades-oferecidas {
+    width: 100%;
+    height: 10%;
+}
+
+.atividades-oferecidas .segundo-h2 {
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-85%);
+    position: absolute;
+    letter-spacing: 10px;
+    z-index: 5;
+}
+
+.images-grid {
+    margin-top: 27vh;
+    background-color: #FFF;
+    --gap: 50px;
+    --num-cols: 5;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.images-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.images-grid-col-2 {
+    grid-column: span 2;
+}
+
+.images-grid-row-2 {
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .images-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+
+legend {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+#levantamento {
+    display: flex;
+    margin-left: 7vh;
+    top: 1;
+    margin-top: 31vh;
+    font-weight: lighter;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    font-weight: 900;
+}
+
+#equipamentos {
+    display: flex;
+    top: 1;
+    margin-top: 14vh;
+    left: 61%;
+    
+    font-weight: bolder;
+    position: absolute;
+    font-size: 40px;
+    color: #FFF;
+}
+
+#natacao {
+    display: flex;
+    margin-left: 6vh;
+    top: 1;
+    margin-top: 50vh;
+    left: 41.25%;
+    
+    font-weight: bolder;
+    position: absolute;
+    font-size: 45px;
+    color: #FFF;
+}
+
+#bicicleta {
+    display: flex;
+    margin-left: 6vh;
+    top: 1;
+    margin-top: 14vh;
+    left: 40%;
+    
+    font-weight: bolder;
+    position: absolute;
+    font-size: 45px;
+    color: #FFF;
+}
+
+#esteiras {
+    display: flex;
+    margin-left: 6vh;
+    top: 1;
+    margin-top: 14vh;
+    left: 80.25%;
+    
+    font-weight: bolder;
+    position: absolute;
+    font-size: 45px;
+    color: #FFF;
+}
+
+.musicas{
+    display: grid;
+    column-gap: 500px;
+    row-gap: 100px;
+    gap: 50px 100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#testando {
+    background-image: url(images/icon2.png);
+    background-repeat: no-repeat;
+
+}
