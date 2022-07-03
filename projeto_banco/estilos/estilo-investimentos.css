@@ -14,8 +14,9 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    width: 100vh;
+    height: 100vh;
+    width: 100%;
+	overflow-x: hidden;
 }
 nav {
 	height: 80px;
@@ -37,19 +38,19 @@ nav ul li {
 	line-height: 80px;
 	margin: 0 5px;
 }
-a {
-    background-image: linear-gradient(to right,red,
-  red 50%,#000 50%);
+.nav-links {
+    background-image: linear-gradient(to right,#ff0000,
+  #ff0000 50%,#000 50%);
     background-size: 200% 100%;
     background-position: -100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.7s ease-in-out;
-    color: white;
+    color: #ffffff;
     font-weight: 700;
 }
 
-a:before {
+.nav-links:before {
     content: '';
     background: red;
     position: absolute;
@@ -58,15 +59,15 @@ a:before {
     width: 0;
 }
 
-a:hover {
+.nav-links:hover {
     background-position: 0;
 }
 
-a:hover::before {
+.nav-links:hover::before {
     width: 100%;
 }
 
-a{
+.nav-links{
 	text-decoration: none;
 	color: black;
 	position: relative;
@@ -74,7 +75,7 @@ a{
 	margin: 1.1vh;
 }
 
-a:after {
+.nav-links:after {
 		content: "";
 		position: absolute;
 		background-color: #ff0000;
@@ -85,8 +86,17 @@ a:after {
 		transition: 0.3s;
 }
 
-a:hover:after{
+.nav-links:hover:after{
 	width: 100%;
+}
+
+.link-interno {
+	color: #000;
+	text-decoration: none;
+}
+
+.link-interno:hover {
+	color: #ff0000;
 }
 
 /* BOTÔES ENTRAR E CADASTRAR*/
@@ -124,20 +134,459 @@ a:hover:after{
 	display: none;
 }
 
-.container {
+/* SESSÔES */
+
+.section-1 {
+	width: 100%;
+	background-color: #dc143c;
+	height: 100vh;
+}
+
+.section-2 {
+	width: 100%;
+	height: 100vh;
+}
+
+.section-3 {
+	width: 100%;
+	background-color: #dc143c;
+	height: 100vh;
+}
+
+/* CONTAINERS */
+
+.container-1 {
+	padding: 3vh;
+	display: flex;
 	position: relative;
-	background-color: magenta;
+	top: 35%;
+	left: 24%;
 }
 
-.titulo {
-	font-size: 6rem;
+.container-2 {
+	padding: 3vh;
+	display: flex;
+	position: relative;
+	top: 35%;
+}
+
+.container-3 {
+	padding: 3vh;
+	display: flex;
+	position: relative;
+	top: 35%;
+	left: 22%;
+}
+
+/* TITULOS */
+
+.titulo-1 {
 	position: absolute;
-	background-color: #000;
-	letter-spacing: 1rem;
-	color: #ffffff;
-	font-family: 'Joan', serif;
+	font-size: 5em;
+	display: inline;
+	letter-spacing: 25px;
 }
 
-.seta {
-	background-color: #ff0000;
+#titulo-2 {
+	position: absolute;
+	font-size: 5em;
+	display: inline;
+	letter-spacing: 25px;
+}
+
+/* CARDS */
+
+div .card  {
+	text-align: center;
+	width: 330px;
+	margin: 20px;
+	height: 200px;
+	border: 2px solid #ff0000;
+	border-radius: 10px;
+	padding-top: 7vh;
+	box-shadow: 10px 9px 6px #0000004d;
+}
+
+.card:hover {
+	animation: card-hover 5s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes card-hover {
+  0% {
+	transform: translateY(0px);
+	transition: .9s;
+  }  
+  100% {
+	transform: translateY(-25px);
+	transition: .9s;
+  }
+}
+
+@media screen and (max-width: 952px){
+    html {
+        height: 100%;
+        width: 50%;
+    }
+	label.logo{
+		font-size: 30px;
+		padding-left: 25px;
+	}
+    a {
+        background-image: linear-gradient(to right,#ff0000,
+      #ff0000 50%,#000 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.7s ease-in-out;
+        color: white;
+        font-weight: 700;
+    }
+    
+    a:before {
+        content: '';
+        background: #ff0000;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+    }
+    
+    a:hover {
+        background-position: 0;
+    }
+    
+    a:hover::before {
+        width: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000000;
+        position: relative;
+        letter-spacing: 2px;
+        margin: 1.1vh;
+    }
+    
+    a:after {
+        content: "";
+        position: absolute;
+        background-color: #ff0000;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    .conteudo {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-45%) translateX(10%);
+    }
+    
+    .conteudo h1{
+        font-size: 3.5rem;
+    }
+    
+    .conteudo p{
+        margin-top: 1vh;
+        font-size: 1rem;
+        width: 50%;
+    }
+    
+    .btn-entrar {
+        background-color: #ff0000;
+        border: none;
+        margin-top: 1vh;
+        padding: 0.5vh;
+    }
+    
+    .btn-saibamais {
+        color: #fff;
+        margin-top: 10px;
+        width: 25vw;
+        background-color: #ff0000;
+        border-radius: 25px;
+        padding: 2vh;
+        margin-bottom: 5vh;
+        border: none;
+    }
+}
+@media screen and (max-width: 858px){
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    label.logo{
+		font-size: 2em;
+        position: absolute;
+		padding-left: 5%;
+	}
+
+	.checkbtn {
+		display: block;
+	}
+
+    .checkbtn, .fa-bars {
+        color: #ff0000;
+        margin-left: 750%;
+    }
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		top: 3.5em;
+		left: -100%;
+        z-index: 2;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 5em 0;
+		line-height: 2em;
+	}
+    a {
+        background-image: linear-gradient(to right,red,
+      red 50%,#000 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.7s ease-in-out;
+        color: white;
+        font-weight: 700;
+    }
+    
+    a:before {
+        content: '';
+        background: red;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+    }
+    
+    a:hover {
+        background-position: 0;
+    }
+    
+    a:hover::before {
+        width: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+        letter-spacing: 2px;
+        margin: 1.1vh;
+    }
+    
+    a:after {
+        content: "";
+        position: absolute;
+        background-color: #ff0000;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    
+    a:hover:after{
+        width: 100%;
+    }
+	#check:checked ~ ul {
+		left: 0;
+	}
+    img {
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        height: 20%;
+        margin-top: 70vh;
+        margin-left: -112%;
+        animation: animadorimagem 10s ease;
+    }
+    
+    .conteudo {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%) translateX(5%);
+    }
+    
+    .conteudo h1{
+        font-size: 3rem;
+    }
+    
+    .conteudo p{
+        margin-top: 1vh;
+        font-size: 1rem;
+        margin-bottom: 1vh;
+        width: 50%;
+    }
+    
+    .btn-entrar {
+        background-color: #ff0000;
+        border: none;
+        margin-top: 5%;
+        padding: 2.5%;
+    }
+
+    .btn-cadastro {
+        background-color: #ff0000;
+        border: none;
+        margin-top: 5%;
+        padding: 2.5%;
+    }
+    
+    .btn-saibamais {
+        color: #fff;
+        margin-top: 10px;
+        width: 30vw;
+        background-color: #ff0000;
+        border-radius: 25px;
+        padding: 2.5%;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 412px){
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+    label.logo{
+		font-size: 2em;
+		padding-left: 0.95em;
+	}
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 95%;
+		height: 100%;
+		background: #fff;
+		top: 3.5em;
+		left: -100%;
+        z-index: 2;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 5em 0;
+		line-height: 2em;
+	}
+    a {
+        background-image: linear-gradient(to right,red,
+      red 50%,#000 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.7s ease-in-out;
+        color: white;
+        font-weight: 700;
+    }
+    
+    a:before {
+        content: '';
+        background: red;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+    }
+    
+    a:hover {
+        background-position: 0;
+    }
+    
+    a:hover::before {
+        width: 100%;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000000;
+        position: relative;
+        letter-spacing: 2px;
+        margin: 1.1vh;
+    }
+    
+    a:after {
+        content: "";
+        position: absolute;
+        background-color: #ff0000;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    
+    a:hover:after{
+        width: 100%;
+    }
+	#check:checked ~ ul {
+		left: 0;
+	}
+    img {
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        height: 20%;
+        margin-top: 65vh;
+        margin-left: -115%;
+    }
+    .conteudo {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-45%) translateX(5%);
+    }
+    
+    .conteudo h1{
+        font-size: 3rem;
+    }
+    
+    .conteudo p{
+        margin-top: 1vh;
+        font-size: 1rem;
+        margin-bottom: 1vh;
+        width: 50%;
+    }
+    
+    .btn-entrar {
+        background-color: #ff0000;
+        border: none;
+        margin-top: 5%;
+        padding: 2.5%;
+    }
+
+    .btn-cadastro {
+        background-color: #ff0000;
+        border: none;
+        margin-top: 5%;
+        padding: 2.5%;
+    }
+    
+    .btn-saibamais {
+        color: #fff;
+        margin-top: 10px;
+        width: 30vw;
+        background-color: #ff0000;
+        border-radius: 25px;
+        padding: 2.5%;
+        border: none;
+    }
 }
