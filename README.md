@@ -1,5 +1,5 @@
 # HTML-CSS-JS
-<em>Projects with <strong>HTML, CSS and JS</strong> - Projetos com <strong>HTML, CSS and JS</strong></em>
+<em>Projects with <strong>HTML, CSS and JS</strong> - Projetos com <strong>HTML, CSS e JS</strong></em>
 
 <hr>
 
