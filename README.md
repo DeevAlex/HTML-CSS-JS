@@ -48,7 +48,9 @@
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Trabalhos2/index.html">Projeto de uma <strong>Imobiliaria</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/trabalho3/index.html">Projeto de uma <strong>Academia</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/exerc%C3%ADcios_aula3/index.html">Projeto de uma <strong>Confeitaria</strong></a></li>
-        <li><a href="https://deevalex.github.io/HTML-CSS-JS/projeto_blog/index.html">Projeto de um <strong>Blog</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/projeto_blog/index.html">Projeto de um <strong>Blog (Basico)</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/formulario/index.html">Projeto de um <strong>Formulario (Basico)</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/parallax/index.html">Projeto de um site com efeito <strong>Parallax</strong></a></li>
     </ul>
 <h1>PERSONAL PROJECTS</h1>
     <ul>
