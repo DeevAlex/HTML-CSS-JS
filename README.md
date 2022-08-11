@@ -51,6 +51,7 @@
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/projeto_blog/index.html">Projeto de um <strong>Blog (Basico)</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/formulario/index.html">Projeto de um <strong>Formulario (Basico)</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/parallax/index.html">Projeto de um site com efeito <strong>Parallax</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Finans/index.html">Projeto de um site utilizando a ferramenta <strong>Bootstrap 4</strong></a></li>
     </ul>
 <h1>PERSONAL PROJECTS</h1>
     <ul>
