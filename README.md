@@ -53,9 +53,9 @@
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/parallax/index.html">Projeto de um site com efeito <strong>Parallax</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Finans/index.html">Projeto de um site utilizando a ferramenta <strong>Bootstrap 4</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Spotify/index.html">Projeto do clone do <strong>Spotify</strong> utilizando a ferramenta <strong>Bootstrap 4</strong></a></li>
-        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Calculadora/index.html">Projeto de uma<strong>Calculadora</strong> utilizando <strong>JavaScript</strong></a></li>
-        <li><a href="https://deevalex.github.io/HTML-CSS-JS/MataMosca/index.html">Projeto de um<strong>Jogo</strong> utilizando <strong>JavaScript</strong></a></li>
-        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Orcamento/index.html">Projeto de um registro de<strong>Orçamentos</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Calculadora/index.html">Projeto de uma <strong>Calculadora</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/MataMosca/index.html">Projeto de um <strong>Jogo</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Orcamento/index.html">Projeto de um registro de <strong>Orçamentos</strong> utilizando <strong>JavaScript</strong></a></li>
     </ul>
 <h1>PERSONAL PROJECTS</h1>
     <ul>
