@@ -43,6 +43,7 @@ body {
     width: 100%;
     color: #DFF3E4;
     margin-top: 25px;
+    outline: none;
     padding: 8px;
     text-transform: uppercase;
 }
@@ -53,10 +54,8 @@ body {
         min-width: 320px;
     }
     .container {
-        margin: 0 auto;
-        margin-top: 20rem;
-        background-color: #2E1760;
-        width: 95%;
+        margin-top: 10rem;
+        width: 89%;
         height: 300px;
     }
 }
@@ -67,10 +66,8 @@ body {
         min-width: 481px;
     }
     .container {
-        margin: 0 auto;
-        margin-top: 20rem;
-        background-color: #2E1760;
-        width: 95%;
+        margin-top: 10rem;
+        width: 94%;
         height: 300px;
     }
 }
@@ -81,10 +78,8 @@ body {
         min-width: 769px;
     }
     .container {
-        margin: 0 auto;
-        margin-top: 20rem;
-        background-color: #2E1760;
-        width: 95%;
+        margin-top: 10rem;
+        width: 94%;
         height: 300px;
     }
 }
