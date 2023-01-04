@@ -57,6 +57,8 @@
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/MataMosca/index.html">Projeto de um <strong>Jogo</strong> utilizando <strong>JavaScript</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Orcamento/index.html">Projeto de um registro de <strong>Orçamentos</strong> utilizando <strong>JavaScript</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Estacionamento/index.html">Projeto de um registro de um <strong>Estacionamento</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/GeradorCPF/index.html">Projeto de um gerador de <strong>CPF</strong> utilizando <strong>JavaScript + Webpack + Babel</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/GeradorSenha/index.html">Projeto de um gerador de <strong>Senha</strong> utilizando <strong>JavaScript + Webpack + Babel</strong></a></li>
     </ul>
 <h1>PERSONAL PROJECTS</h1>
     <ul>

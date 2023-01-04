@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #171738;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 20rem;
+    background-color: #2E1760;
+    width: 450px;
+    height: 300px;
+}
+
+.container .titulo {
+    padding-top: 60px;
+    color: #DFF3E4;
+    font-family: 'Joan', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.container .resultado {
+    background-color:#7180B9;
+    margin: 0 auto;
+    width: 400px;
+    line-height: 40px;
+    font-size: 36px;
+    text-align: center;
+    color: #DFF3E4;
+    letter-spacing: 2px;
+    height: 40px;
+}
+
+.gerar {
+    background-color: #3423A6;
+    width: 400px;
+    color: #DFF3E4;
+    margin-top: 25px;
+    padding: 8px;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
