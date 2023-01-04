@@ -8,8 +8,9 @@ body {
 .container {
     margin: 0 auto;
     margin-top: 20rem;
+    padding: 8px;
     background-color: #2E1760;
-    width: 450px;
+    width: 22%;
     height: 300px;
 }
 
@@ -28,7 +29,7 @@ body {
 .container .resultado {
     background-color:#7180B9;
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
     line-height: 40px;
     font-size: 36px;
     text-align: center;
@@ -39,12 +40,11 @@ body {
 
 .gerar {
     background-color: #3423A6;
-    width: 400px;
+    width: 100%;
     color: #DFF3E4;
     margin-top: 25px;
     padding: 8px;
     text-transform: uppercase;
-    margin-left: 25px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) { /*  CELULAR  */
@@ -56,7 +56,7 @@ body {
         margin: 0 auto;
         margin-top: 20rem;
         background-color: #2E1760;
-        width: 100%;
+        width: 95%;
         height: 300px;
     }
 }
@@ -70,7 +70,7 @@ body {
         margin: 0 auto;
         margin-top: 20rem;
         background-color: #2E1760;
-        width: 100%;
+        width: 95%;
         height: 300px;
     }
 }
@@ -84,7 +84,7 @@ body {
         margin: 0 auto;
         margin-top: 20rem;
         background-color: #2E1760;
-        width: 100%;
+        width: 95%;
         height: 300px;
     }
 }
