@@ -56,7 +56,7 @@
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Calculadora/index.html">Projeto de uma <strong>Calculadora</strong> utilizando <strong>JavaScript</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/MataMosca/index.html">Projeto de um <strong>Jogo</strong> utilizando <strong>JavaScript</strong></a></li>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/Orcamento/index.html">Projeto de um registro de <strong>Orçamentos</strong> utilizando <strong>JavaScript</strong></a></li>
-        <li><a href="https://deevalex.github.io/HTML-CSS-JS/ModeloEstacionamento/index.html">Projeto de um registro de um <strong>Estacionamento</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/Estacionamento/index.html">Projeto de um registro de um <strong>Estacionamento</strong> utilizando <strong>JavaScript</strong></a></li>
     </ul>
 <h1>PERSONAL PROJECTS</h1>
     <ul>
