@@ -81,6 +81,7 @@ label {
 @media screen and (min-width: 320px) and (max-width: 480px) { /*  CELULAR  */
     body {
         width: 100%;
+        min-width: 320px;
     }
     table {
         border-collapse: collapse;
@@ -100,6 +101,7 @@ label {
 @media screen and (min-width: 481px) and (max-width: 768px) { /*  TABLET  */
     body {
         width: 100%;
+        min-width: 481px;
     }
     .container {
         margin: 0 auto;
@@ -127,6 +129,7 @@ label {
 @media screen and (min-width: 769px) and (max-width: 1023px) { /*  LAPTOP  */
     body {
         width: 100%;
+        min-width: 769px;
     }
     .container {
         margin: 0 auto;
