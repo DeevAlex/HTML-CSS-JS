@@ -44,7 +44,9 @@ body {
     color: #DFF3E4;
     margin-top: 25px;
     outline: none;
+    cursor: pointer;
     padding: 8px;
+    border: none;
     text-transform: uppercase;
 }
 
@@ -54,8 +56,8 @@ body {
         min-width: 320px;
     }
     .container {
-        margin-top: 10rem;
-        width: 89%;
+        margin-top: 12rem;
+        width: 87%;
         height: 300px;
     }
 }
@@ -66,8 +68,8 @@ body {
         min-width: 481px;
     }
     .container {
-        margin-top: 10rem;
-        width: 94%;
+        margin-top: 12rem;
+        width: 92%;
         height: 300px;
     }
 }
@@ -78,8 +80,8 @@ body {
         min-width: 769px;
     }
     .container {
-        margin-top: 10rem;
-        width: 94%;
+        margin-top: 12rem;
+        width: 92%;
         height: 300px;
     }
 }
