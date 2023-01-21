@@ -11,10 +11,10 @@ body {
 
 .container {
     background-color: #fff;
-    border-radius: 15px;
-    width: 21%;
+    border-radius: 10px;
+    width: 25%;
     padding: 15px;
-    height: 400px;
+    height: 380px;
     margin: 14rem auto;
 }
 
@@ -27,7 +27,7 @@ body {
     width: 100%;
     background-color: #2b7ae2;
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #dfdfdf;
     font-size: 32px;
     line-height: 50px;
@@ -44,19 +44,30 @@ input[type="number"] {
 
 label {
     font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
     width: 15px;
+    cursor: pointer;
     height: 15px;
 }
 
 .gerar {
-    margin-top: 35px;
+    margin-top: 25px;
     cursor: pointer;
-    border-radius: 15px;
-    padding: 8px;
+    border: none;
+    color: #fff;
+    background-color: #2d85f8;
+    border-radius: 5px;
+    padding: 10px;
     width: 100%;
+}
+
+.gerar:hover {
+    filter: brightness(85%);
+    transition: .5s;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) { /*  CELULAR  */
@@ -65,7 +76,7 @@ input[type="checkbox"] {
         min-width: 320px;
     }
     .container {
-        margin: 9rem 0.5rem auto;
+        margin: 11rem auto;
         width: 86%;
         height: 100%;
         padding: 15px 15px;
@@ -77,12 +88,12 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 481px) and (max-width: 768px) { /*  TABLET  */
     body {
-        width: 97.5%;
-        min-width: 320px;
+        min-width: 481px;
+        width: 98.4vw;
     }
     .container {
-        margin: 9rem 0.5rem auto;
-        width: 85%;
+        margin: 15rem auto;
+        min-width: 380px;
         height: 100%;
         padding: 15px 15px;
     }
@@ -94,11 +105,43 @@ input[type="checkbox"] {
 @media screen and (min-width: 769px) and (max-width: 1023px) { /*  LAPTOP  */
     body {
         width: 97.5%;
-        min-width: 320px;
+        min-width: 769px;
     }
     .container {
         margin: 15rem auto;
-        width: 40%;
+        min-width: 400px;
+        height: 100%;
+        padding: 15px 15px;
+    }
+    .resultado {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 420px;
+        height: 100%;
+        padding: 15px 15px;
+    }
+    .resultado {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1201px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 470px;
         height: 100%;
         padding: 15px 15px;
     }
