@@ -18,20 +18,25 @@ class BuscaPreenchedorDeCep {
     envia() {
         this.form.addEventListener('submit', e => {
             e.preventDefault()
-            if (this.buscaCep.value.length > 9) {
-                alert("O campo caracteres deve conter apenas 8 ou 9 caracteres")
+            
+            if (this.buscaCep.value.length > 9 || this.buscaCep.value.length < 8) {
+                alert("O campo CEP deve conter apenas 8 ou 9 caracteres")
                 return;
             }
             fetch(`https://viacep.com.br/ws/${this.buscaCep.value}/json`)
                 .then(response => response.json())
                 .then(resposta => {
+                    if (resposta.erro) {
+                        alert("CEP inválido")
+                        return
+                    }
                     this.rua.value = resposta.logradouro
                     this.cidade.value = resposta.localidade
                     this.bairro.value = resposta.bairro
                     this.estado.value = resposta.uf
-                    alert('Campos Preenchidos automaticamente!')
+                    alert('Campos Preenchidos Automaticamente!')
                 })
-                .catch(e => console.log(e))
+                .catch(e => alert('Houve um Erro!'))
         })
     }
 
