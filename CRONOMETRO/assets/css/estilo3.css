@@ -24,7 +24,7 @@ body {
     animation: corFundo 15s infinite ease-in-out alternate-reverse;   
 }
 
-.s1 {
+.container {
 
     background-color: #fff;
     width: 45%;
@@ -38,7 +38,6 @@ body {
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
 
 }
 
@@ -62,9 +61,9 @@ h1 {
 }
 
 .btn {
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
-    width: 100px;
+    width: 175px;
     background-color: #657ED4;
     color: #fff;
     border: none;
@@ -89,37 +88,64 @@ h1 {
     filter: brightness(85%);
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
-    .s1 {
-        width: 90%;
+@media screen and (min-width: 320px) and (max-width: 480px) { /*  CELULAR  */
+    body {
+        width: 97.5%;
+        min-width: 320px;
     }
-
-    .botoes {
-        gap: 15px;
+    .container {
+        margin: 11rem auto;
+        width: 86%;
+        padding: 15px 15px;
     }
-
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    .s1 {
-        width: 570px;
+@media screen and (min-width: 481px) and (max-width: 768px) { /*  TABLET  */
+    body {
+        min-width: 481px;
+        width: 98.4vw;
     }
-
-    .botoes {
-        gap: 15px;
+    .container {
+        margin: 15rem auto;
+        min-width: 380px;
+        padding: 15px 15px;
     }
-
 }
 
-@media screen and (min-width: 901px) and (max-width: 1700px) {
-    .s1 {
-        width: 800px;
+@media screen and (min-width: 769px) and (max-width: 1023px) { /*  LAPTOP  */
+    body {
+        width: 97.5%;
+        min-width: 769px;
     }
-
-    .botoes {
-        gap: 15px;
+    .container {
+        margin: 15rem auto;
+        min-width: 400px;
+        padding: 15px 15px;
     }
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 420px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (min-width: 1201px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 470px;
+        padding: 15px 15px;
+    }
 }
 
 @keyframes corFundo {
