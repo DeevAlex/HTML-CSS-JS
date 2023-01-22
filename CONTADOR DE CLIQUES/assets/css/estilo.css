@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Slab:wght@100;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #6294E3;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: auto;
+}
+
+.s1 {
+
+    margin: auto;
+    margin-top: 12rem;
+    background-color: #fff;
+    width: 475px;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cliques {
+    background-color: #6294E3;
+    width: 425px;
+    text-align: center;
+    color: #FFF;
+    line-height: 200px;
+    font-size: 80px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 25px auto;
+}
+
+.btn {
+    border-radius: 10%;
+    padding: 15px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-add {
+    background-color: #008000;
+    border: none;
+    color: #FFF;
+}
+
+.btn-add:hover {
+    transition: .5s;
+    filter: brightness(90%);
+}
+
+.btn-reset {
+    border: none;
+    background-color: #dfdfdf;
+}
+
+.btn-reset:hover {
+    transition: .5s;
+    filter: brightness(90%);
+}
+
+.btn-remove {
+    background-color: #ff0000;
+    border: none;
+    color: #FFF;
+}
+
+.btn-remove:hover {
+    transition: .5s;
+    filter: brightness(90%);
+}

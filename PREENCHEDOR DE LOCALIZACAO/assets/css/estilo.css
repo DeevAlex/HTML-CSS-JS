@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Slab:wght@100;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #C22F;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 98vw;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 540px;
+    height: 520px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container input {
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.container select {
+    margin: 5px 0 15px 0;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.container input:focus {
+    color: #C22F;
+    border: 1px solid #C22F;
+}
+
+.container form button {
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #C22F;
+    border: none;
+    color: #fff;
+}
+
+.container form button:hover {
+    transition: 0.3s;
+    filter: brightness(85%);
+}
+
+.sucesso {
+    border: 1px solid green;
+}

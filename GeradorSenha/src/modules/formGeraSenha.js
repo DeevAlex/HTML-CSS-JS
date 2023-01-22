@@ -8,6 +8,7 @@ let letrasMaiusculas = document.querySelector(".letrasMaiusculas")
 let letrasMinusculas = document.querySelector(".letrasMinusculas")
 let simbolos = document.querySelector(".simbolos")
 let btn_gerar = document.querySelector(".gerar")
+let senhas = document.querySelector(".senhas")
 
 let limiteMinimo = 4
 let limiteMaximo = 20
@@ -42,6 +43,7 @@ export default () => {
             if (tamanhoSenha.value < limiteMinimo || tamanhoSenha.value > limiteMaximo) return alert(`Tamanho é de ${limiteMinimo} a ${limiteMaximo}`)
 
             resultado.innerHTML = gera()
+            senhas.innerHTML = armazena()
 
         }
     })
@@ -55,6 +57,7 @@ export default () => {
         if (tamanhoSenha.value < limiteMinimo || tamanhoSenha.value > limiteMaximo) return alert(`Tamanho é de ${limiteMinimo} a ${limiteMaximo}`)
             
         resultado.innerHTML = gera()
+        senhas.innerHTML = armazena()
 
     })
 
@@ -72,4 +75,15 @@ function gera() {
         return senha || "Nada Selecionado"
 }
 
+function armazena() {
+    let senhasA = []
+    senhasA.push(gera())
+    senhasA.forEach(element => {
+        let meusItens = []
+        let item = localStorage.setItem('senhaSalva', element)
+        let pegarItem = localStorage.getItem('senhaSalva')
+        meusItens.push(item)
+    })
+    return senhasA
+}
 

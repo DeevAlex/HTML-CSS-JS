@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="titulo">PREENCHEDOR DE LOCALIZAÇÃO</h1>
+        <form>
+            <label for="cep">
+                CEP:
+                <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+            </label>
+            <label for="rua">
+                Rua:
+                <input type="text" name="rua" id="rua" placeholder="Digite o nome da sua Rua">
+            </label>
+            <label for="bairro">
+                Bairro:
+                <input type="text" name="bairro" id="bairro" placeholder="Digite o nome de seu Bairro">
+            </label>
+            <label for="cidade">
+                Cidade:
+                <input type="text" name="cidade" id="cidade" placeholder="Digite o nome de sua Cidade">
+            </label>
+            <label for="estado">
+                Estado:
+                <select name="estado" id="estado">
+                    <option value="">Escolha um Estado</option>
+                    <option value="SP">SP</option>
+                    <option value="DF">DF</option>
+                    <option value="AM">AM</option>
+                    <option value="BH">BH</option>
+                </select>
+            </label>
+            <button class="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="assets/js/meuscript.js"></script>
+</body>
+
+</html>
