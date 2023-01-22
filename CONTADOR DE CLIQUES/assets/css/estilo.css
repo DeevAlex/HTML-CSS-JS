@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Slab:wght@100;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary-color: #6294E3;
+
+    --primary-color: #030c1a;
 
 }
 
@@ -34,7 +35,7 @@ body {
 }
 
 .cliques {
-    background-color: #6294E3;
+    background-color: crimson;
     width: 425px;
     text-align: center;
     color: #FFF;
@@ -93,11 +94,27 @@ body {
     body {
         width: 97.5%;
         min-width: 320px;
+        background-color: #030c1a;
     }
     .container {
-        margin: 11rem auto;
-        width: 86%;
+        margin: 12rem auto;
+        width: 89%;
         padding: 15px 15px;
+    }
+    .cliques {
+        width: 90%;
+        text-align: center;
+        color: #FFF;
+        line-height: 200px;
+        font-size: 80px;
+        height: 200px;
+        border-radius: 15px;
+        margin: 25px auto;
+    }
+    .botoes {
+        display: flex;
+        gap: 15px;
+        justify-content: space-evenly;
     }
 }
 
@@ -112,8 +129,7 @@ body {
         padding: 15px 15px;
     }
     .cliques {
-        background-color: #6294E3;
-        min-width: 360px;
+        min-width: 40%;
         text-align: center;
         color: #FFF;
         line-height: 200px;
@@ -136,7 +152,6 @@ body {
     }
 
     .cliques {
-        background-color: #6294E3;
         min-width: 380px;
         text-align: center;
         color: #FFF;
@@ -159,7 +174,6 @@ body {
         padding: 15px 15px;
     }
     .cliques {
-        background-color: #6294E3;
         min-width: 400px;
         text-align: center;
         color: #FFF;
@@ -174,6 +188,7 @@ body {
 @media screen and (min-width: 1201px) { /*  DESKTOP  */
     body {
         width: 97.5%;
+        background-color: #030c1a;
         min-width: 1024px;
     }
     .container {
@@ -182,7 +197,6 @@ body {
         padding: 15px 15px;
     }
     .cliques {
-        background-color: #6294E3;
         min-width: 450px;
         text-align: center;
         color: #FFF;
