@@ -63,6 +63,9 @@
 <h1>PERSONAL PROJECTS</h1>
     <ul>
         <li><a href="https://deevalex.github.io/HTML-CSS-JS/projeto_banco/index.html">Projeto de um <strong>Banco</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/CONTADOR%20DE%20CLIQUES/index.html">Projeto de um contador de <strong>cliques</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/PREENCHEDOR%20DE%20LOCALIZACAO/index.html">Projeto de um autopreenchedor de <strong>endereço</strong> utilizando <strong>JavaScript</strong></a></li>
+        <li><a href="https://deevalex.github.io/HTML-CSS-JS/CRONOMETRO/index.html">Projeto de um cronômetro de <strong>endereço</strong> utilizando <strong>JavaScript</strong></a></li>
     </ul>
 
 <hr>
