@@ -78,3 +78,63 @@ body {
 .sucesso {
     border: 1px solid green;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) { /*  CELULAR  */
+    body {
+        width: 97.5%;
+        min-width: 320px;
+    }
+    .container {
+        margin: 10rem auto;
+        width: 300px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /*  TABLET  */
+    body {
+        min-width: 481px;
+        width: 98.4vw;
+    }
+    .container {
+        margin: 13rem auto;
+        width: 430px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) { /*  LAPTOP  */
+    body {
+        width: 97.5%;
+        min-width: 769px;
+    }
+    .container {
+        margin: 15rem auto;
+        width: 700px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 420px;
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (min-width: 1201px) { /*  DESKTOP  */
+    body {
+        width: 97.5%;
+        min-width: 1024px;
+    }
+    .container {
+        margin: 15rem auto;
+        min-width: 470px;
+        padding: 15px 15px;
+    }
+}
