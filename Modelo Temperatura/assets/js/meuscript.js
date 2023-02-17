@@ -25,7 +25,6 @@ class Conversor {
         })
 
         this.kelvin.addEventListener('keyup', e => {
-            e.target += `${this.kelvin.value} °K`
             this.fahrenheit.value = `${Number(this.kelvin.value) - 273.15} °F`
             this.celsius.value = `${((Number(this.kelvin.value) - 273.15) * 9 / 5 + 32).toFixed(2)} °C`
         })
