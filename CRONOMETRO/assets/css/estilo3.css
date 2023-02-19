@@ -95,7 +95,7 @@ h1 {
     }
     .container {
         margin: 11rem auto;
-        width: 86%;
+        width: 300px;
         padding: 15px 15px;
     }
 }
@@ -107,7 +107,7 @@ h1 {
     }
     .container {
         margin: 15rem auto;
-        min-width: 380px;
+        min-width: 450px;
         padding: 15px 15px;
     }
 }
@@ -119,7 +119,7 @@ h1 {
     }
     .container {
         margin: 15rem auto;
-        min-width: 400px;
+        min-width: 600px;
         padding: 15px 15px;
     }
 }
@@ -131,7 +131,7 @@ h1 {
     }
     .container {
         margin: 15rem auto;
-        min-width: 420px;
+        min-width: 620px;
         padding: 15px 15px;
     }
 }

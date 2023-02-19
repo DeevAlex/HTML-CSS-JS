@@ -39,6 +39,7 @@ iniciar.addEventListener('click', () => {
         pausar.classList.remove('pausado')
         pausar.innerHTML = 'Pausar'
         iniciar.classList.add('iniciado')
+        relogio.classList.remove('timerPausado')
         iniciar.innerHTML = 'Iniciado'
     }
 
