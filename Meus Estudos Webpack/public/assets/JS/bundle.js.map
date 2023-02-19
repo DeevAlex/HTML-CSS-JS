@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAGAA,QAAQC,IAAI","sources":["webpack://meus-estudos-webpack/./src/index.js"],"sourcesContent":["// Apenas mexer nesse index.js\r\n// 2\r\n// 3\r\nconsole.log(\"EIIIIII\")"],"names":["console","log"],"sourceRoot":""}
