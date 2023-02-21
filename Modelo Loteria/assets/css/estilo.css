@@ -87,7 +87,7 @@ body {
         min-width: 320px;
     }
     .container {
-        margin: 16rem auto;
+        margin: 18rem auto;
         width: 86%;
         height: 100%;
         padding: 15px 15px;
@@ -96,7 +96,7 @@ body {
         margin-left: 10px;
     }
     .resultado {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
