@@ -1,0 +1,28 @@
+<%- include("./includes/head.ejs"); %> <!-- Isso inclui o que tem no head.ejs aqui no index.ejs -->
+        
+    <div class="container">
+
+        <h1> Meu Titulo
+            
+            <%#= titulo %><br> <!-- Isso aqui está chamando a chave do objeto do homeController esse exibe a tag --> 
+            <!--  <%- titulo %>  --> <!-- Isso aqui está chamando a chave do objeto do homeController esse executa a tag  -->
+            <!-- EX: <% if(typeof titulo !== "undefined") { %> <%= titulo %> <%  } else {  %>O titulo não foi enviado <%  }  %> -->
+            <!-- Pra comentar coloque <%# %> -->
+
+            <%# numeros.forEach((element) => {  %> <!-- Codigo não vai mostrar pois está comentado por # -->
+                <%#= element %>
+            <%# });  %>
+
+        </h1>
+
+        <form action="/" method="post">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu Nome" id="nome">
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+<%- include("./includes/footer.ejs") %>

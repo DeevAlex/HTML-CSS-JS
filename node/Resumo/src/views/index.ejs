@@ -1,0 +1,18 @@
+<%- include("./includes/head.ejs"); %>
+        
+    <div class="container">
+
+        <h1> Meu Titulo </h1>
+
+        <form action="/" method="post">
+
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>"> <!-- TEM QUE TER ELE , CASO N TENHA , VAI SER EXIBIDO A PAGINA 404 -->
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu Nome" id="nome">
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+<%- include("./includes/footer.ejs") %>

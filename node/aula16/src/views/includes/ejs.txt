@@ -1,0 +1,13 @@
+<% Controle de fluxo ( if , for , ... ) %>
+<%= Apenas Imprime %>
+<%- Executa e imprime %>
+<%# Comentario %>
+<%- include("CAMINHO/ARQUIVO") %>
+
+Exemplo: 
+
+<% if (<condição>) {
+    <%= Imprime %>
+<% } else { %>
+    <%= Imprime %>
+<% } %>
